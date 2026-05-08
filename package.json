@@ -1,0 +1,26 @@
+{
+  "name": "natrous",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ishakson/complete-node-bootcamp#readme",
+  "bugs": {
+    "url": "https://github.com/ishakson/complete-node-bootcamp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishakson/complete-node-bootcamp.git"
+  },
+  "license": "ISC",
+  "author": "isha",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

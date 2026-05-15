@@ -5,6 +5,9 @@ const app = express();
 app.use(express.json())
 
 const tours = JSON.parse(fs.readFileSync(`${__dirname}/dev-data/data/tours.json`))
+app.get("/",(req,res)=>{
+    res.status(200).send("hello")
+})
 app.get("/api/v1/tours", (req, res)=>{
     res.status(200).json({
         status: "success",

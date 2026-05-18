@@ -10,9 +10,22 @@ app.get("/",(req,res)=>{
 })
 app.get("/api/v1/tours", (req, res)=>{
     res.status(200).json({
+        status: "success", 
+        data: {  
+            tours
+        }
+    })
+})
+app.get("/api/v1/tours/:id", (req, res)=>{
+    let id = req.params.id * 1;
+    id = tour = tours.find(el => el.id === id)
+    if(id > tours.length){
+        res.status(404).json()
+    }
+    res.status(200).json({
         status: "success",
         data: {
-            tours
+            tour
         }
     })
 })
@@ -31,6 +44,7 @@ app.post("/api/v1/tours", (req,res)=>{
         })
      })
 })
+
 const port = 3000;
 app.listen(port,(req, res)=>{
     console.log("server is listening on port 3000!")

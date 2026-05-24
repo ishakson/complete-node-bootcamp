@@ -11,13 +11,16 @@
     "url": "git+https://github.com/ishakson/complete-node-bootcamp.git"
   },
   "license": "ISC",
-  "author": "isha",
+  "author": "ishak",
   "type": "commonjs",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start:dev": "nodemon server.js",
+    "start:prod": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "morgan": "^1.10.1"
   },

@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/ishakson/complete-node-bootcamp.git"
   },
+  
   "license": "ISC",
   "author": "ishak",
   "type": "commonjs",

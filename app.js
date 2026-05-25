@@ -1,6 +1,5 @@
 const express = require('express');
 const morgan = require('morgan');
-
 const userRouter = require('./routes/userRoutes');
 const tourRouter = require('./routes/tourRoutes');
 
@@ -13,7 +12,6 @@ app.use(express.json());
 app.use(express.static(`${__dirname}/public`));
 
 app.use((req, res, next) => {
-  console.log('it done!');
   next();
 });
 app.use((req, res, next) => {
